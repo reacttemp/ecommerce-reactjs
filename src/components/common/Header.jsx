@@ -116,7 +116,7 @@ const Header = () => {
                                 <form className="search-form-wrapper" action="#/">
                                     <input type="search" placeholder="Search Here" aria-label="Search" />
                                     <div className="search-icon">
-                                        <button><i class="fas fa-search"></i></button>
+                                        <button><i className="fas fa-search"></i></button>
                                     </div>
                                 </form>
                             </div>

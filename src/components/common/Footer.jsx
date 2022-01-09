@@ -123,11 +123,11 @@ const Footer = () => {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <div className="copyright-right">
                                 <ul className="social-copyright">
-                                    <li><a href="#/"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#/"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#/"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#/"><i class="far fa-envelope"></i></a></li>
+                                    <li><a href="#/"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#/"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a href="#/"><i className="fab fa-instagram"></i></a></li>
+                                    <li><a href="#/"><i className="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#/"><i className="far fa-envelope"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +144,7 @@ const Footer = () => {
                     <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
                 </svg>
 
-                <i class="fas fa-arrow-up nuron-scroll-icon"></i>
+                <i className="fas fa-arrow-up nuron-scroll-icon"></i>
             </div>
 
             {/* End Top To Bottom Area  */}

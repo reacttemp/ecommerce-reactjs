@@ -24,7 +24,7 @@ const ServiceSection = () => {
                                         <h4 className="title"><a href="#/">Set up your wallet</a></h4>
                                         <p className="description">Powerful features and inclusions, which makes Nuron standout,
                                             easily customizable and scalable.</p>
-                                        <a className="read-more-button" href="#/"><i class="fas fa-arrow-right"></i></a>
+                                        <a className="read-more-button" href="#/"><i className="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <a className="over-link" href="#/"></a>
@@ -62,7 +62,7 @@ const ServiceSection = () => {
                                         <h4 className="title"><a href="#/">Add your NFT's</a></h4>
                                         <p className="description">We've made the template fully responsive, so it looks great on
                                             all devices: desktop, tablets and.</p>
-                                        <a className="read-more-button" href="#/"><i class="fas fa-arrow-right"></i></a>
+                                        <a className="read-more-button" href="#/"><i className="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <a className="over-link" href="#/" />
@@ -81,7 +81,7 @@ const ServiceSection = () => {
                                         <h4 className="title"><a href="#/">Sell Your NFT's</a></h4>
                                         <p className="description">I throw myself down among the tall grass by the stream as I
                                             lie close to the earth NFT's.</p>
-                                        <a className="read-more-button" href="#/"><i class="fas fa-arrow-right"></i></a>
+                                        <a className="read-more-button" href="#/"><i className="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <a className="over-link" href="#/" />
