@@ -1,11 +1,11 @@
 import React from 'react'
-import Banner from '../../components/Banner'
-import ExploreProducts from '../../components/ExploreProducts'
-import NewItems from '../../components/NewItems'
-import ServiceSection from '../../components/ServiceSection'
-import TopCollection from '../../components/TopCollection'
-import TopSeller from '../../components/TopSeller'
-import ExploreCarousel from "../../components/ExploreCarousel";
+import Banner from './Banner'
+import ExploreProducts from './ExploreProducts'
+import NewItems from './NewItems'
+import ServiceSection from './ServiceSection'
+import TopCollection from './TopCollection'
+import TopSeller from './TopSeller'
+import ExploreCarousel from "./ExploreCarousel";
 
 const Home = () => {
     return (

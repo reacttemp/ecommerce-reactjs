@@ -139,14 +139,11 @@ const Footer = () => {
             <div className="mouse-cursor cursor-inner" />
             {/* Start Top To Bottom Area  */}
             <div className="rn-progress-parent">
-
                 <svg className="rn-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
                     <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
                 </svg>
-
                 <i className="fas fa-arrow-up nuron-scroll-icon"></i>
             </div>
-
             {/* End Top To Bottom Area  */}
         </div>
     )

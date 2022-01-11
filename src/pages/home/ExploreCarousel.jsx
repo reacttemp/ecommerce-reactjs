@@ -1,15 +1,101 @@
 import React from 'react'
 import Slider from "react-slick";
+import LiveSingleProduct from './LiveSingleProduct';
+
+const PrevArrow = ({ onClick }) => {
+    return (<button onClick={onClick} className="slide-arrow prev-arrow"><i className="fas fa-arrow-left"></i></button>);
+}
+const NextArrow = ({ onClick }) => {
+    return (<button
+        className={`slide-arrow next-arrow`}
+        onClick={onClick}
+    ><i className="fas fa-arrow-right"></i></button>)
+}
 
 const ExploreCarousel = () => {
     const settings = {
         dots: true,
-        infinite: true,
+        // infinite: true,
         speed: 500,
         slidesToShow: 4,
         slideToScroll: 1,
+        prevArrow:
+            <PrevArrow />,
+        nextArrow:
+            <NextArrow />,
+        responsive: [
+            {
+                breakpoint: 1124,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 868,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     }
-
+    const liveProducts = [
+        {
+            "productName": "Preatent",
+            "bgImg": "assets/images/portfolio/portfolio-07.jpg",
+            "avatars": [
+                {
+                    name: "Farik Shaikh",
+                    img: "assets/images/client/client-1.png"
+                },
+                {
+                    name: "Shaikh",
+                    img: "assets/images/client/client-8.png"
+                },
+                {
+                    name: "Farik",
+                    img: "assets/images/client/client-8.png"
+                }
+            ],
+            "placeBit": "15+ Place Bit",
+            "highestBid": "Highest bid 1/20",
+            "lastBid": "0.244wETH",
+            "likes": "322"
+        },
+        {
+            "productName": "Preatent2",
+            "bgImg": "assets/images/portfolio/portfolio-10.jpg",
+            "avatars": [
+                {
+                    name: "Farik Shaikh",
+                    img: "assets/images/client/client-1.png"
+                },
+                {
+                    name: "Shaikh",
+                    img: "assets/images/client/client-8.png"
+                },
+                {
+                    name: "Farik",
+                    img: "assets/images/client/client-8.png"
+                }
+            ],
+            "placeBit": "15+ Place Bit",
+            "highestBid": "Highest bid 1/20",
+            "lastBid": "0.244wETH",
+            "likes": "322"
+        }
+    ]
     return (
         <div>
             {/* Explore Style Carousel */}
@@ -26,7 +112,6 @@ const ExploreCarousel = () => {
                         <div className="col-lg-12">
                             <div className="banner-one-slick slick-activation-03 slick-arrow-style-one rn-slick-dot-style slick-gutter-15">
                                 <Slider {...settings}>
-                                    {/* start single product */}
                                     <div className="single-slide-product">
                                         <div className="product-style-one">
                                             <div className="card-thumbnail">
@@ -392,7 +477,6 @@ const ExploreCarousel = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* end single product */}
                                 </Slider>
                             </div>
                         </div>

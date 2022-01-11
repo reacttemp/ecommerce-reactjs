@@ -43,10 +43,10 @@ const ServiceSection = () => {
                                         <h4 className="title"><a href="#/">Create your collection</a></h4>
                                         <p className="description">A great collection of beautiful website templates for your need.
                                             Choose the best suitable template.</p>
-                                        <a className="read-more-button" href="#/"><i className="feather-arrow-right" /></a>
+                                        <a className="read-more-button" href="#/"><i className="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
-                                <a className="over-link" href="#/" />
+                                <a className="over-link" href="#/"></a>
                             </div>
                         </div>
                         {/* End single service */}

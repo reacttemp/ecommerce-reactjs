@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link, NavLink } from 'react-router-dom'
 const Header = () => {
     return (
         <>
@@ -8,38 +8,38 @@ const Header = () => {
                     <div className="header-inner">
                         <div className="header-left">
                             <div className="logo-thumbnail logo-custom-css">
-                                <a className="logo-light" href="index.html"><img src="assets/images/logo/logo-white.png" alt="nft-logo" /></a>
-                                <a className="logo-dark" href="index.html"><img src="assets/images/logo/logo-dark.png" alt="nft-logo" /></a>
+                                <Link className="logo-light" to="/"><img src="assets/images/logo/logo-white.png" alt="nft-logo" /></Link>
+                                <Link className="logo-dark" to="/"><img src="assets/images/logo/logo-dark.png" alt="nft-logo" /></Link>
                             </div>
                             <div className="mainmenu-wrapper">
                                 <nav id="sideNav" className="mainmenu-nav d-none d-xl-block">
                                     {/* Start Mainmanu Nav */}
                                     <ul className="mainmenu">
                                         <li className="has-droupdown has-menu-child-item">
-                                            <a className="its_new" href="index.html">Home</a>
+                                            <Link className="its_new" to="/">Home</Link>
                                             <ul className="submenu">
-                                                <li><a href="index.html">Home page One <i className="feather-home" /></a></li>
-                                                <li><a href="index-two.html">Home page Two<i className="feather-home" /></a></li>
-                                                <li><a href="index-three.html">Home page Three<i className="feather-home" /></a></li>
-                                                <li><a href="index-four.html">Home page Four<i className="feather-home" /></a></li>
-                                                <li><a href="index-five.html">Home page Five<i className="feather-home" /></a></li>
-                                                <li><a href="index-six.html">Home page Six<i className="feather-home" /></a></li>
-                                                <li><a href="index-seven.html">Home page Seven<i className="feather-home" /></a></li>
+                                                <li><a href="index.html">Home page One <i className="fas fa-home"></i></a></li>
+                                                <li><a href="index-two.html">Home page Two<i className="fas fa-home"></i></a></li>
+                                                <li><a href="index-three.html">Home page Three<i className="fas fa-home"></i></a></li>
+                                                <li><a href="index-four.html">Home page Four<i className="fas fa-home"></i></a></li>
+                                                <li><a href="index-five.html">Home page Five<i className="fas fa-home"></i></a></li>
+                                                <li><a href="index-six.html">Home page Six<i className="fas fa-home"></i></a></li>
+                                                <li><a href="index-seven.html">Home page Seven<i className="fas fa-home"></i></a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about.html">About</a>
+                                        <li><Link to="about">About</Link>
                                         </li>
                                         <li className="has-droupdown has-menu-child-item">
                                             <a className="its_new" href="#/">Explore</a>
                                             <ul className="submenu">
-                                                <li><a href="explore-one.html">Explore Filter<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-two.html">Explore Isotop<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-three.html">Explore Carousel<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-four.html">Explore Simple<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-five.html">Explore Place Bid<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-six.html">Place Bid With Filter<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-seven.html">Place Bid With Isotop<i className="feather-fast-forward" /></a></li>
-                                                <li><a href="explore-eight.html">Place Bid With Carousel<i className="feather-fast-forward" /></a></li>
+                                                <li><a href="explore-one.html">Explore Filter<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-two.html">Explore Isotop<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-three.html">Explore Carousel<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-four.html">Explore Simple<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-five.html">Explore Place Bid<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-six.html">Place Bid With Filter<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-seven.html">Place Bid With Isotop<i className="fas fa-fast-forward"></i></a></li>
+                                                <li><a href="explore-eight.html">Place Bid With Carousel<i className="fas fa-fast-forward"></i></a></li>
                                                 <li><a className="live-expo" href="explore-live.html">Live Explore</a></li>
                                                 <li><a className="live-expo" href="explore-live-two.html">Live Explore Carousel</a></li>
                                                 <li><a className="live-expo" href="explore-live-three.html">Live With Place Bid</a></li>
@@ -58,7 +58,7 @@ const Header = () => {
                                                                 <li>
                                                                     <a href="upload-variants.html">Upload Type<i data-feather="layers" /></a>
                                                                 </li>
-                                                                <li><a href="activity.html">Activity<i data-feather="activity" /></a></li>
+                                                                <li><Link to="activity">Activity<i className='fa fa-bell'></i></Link></li>
                                                                 <li>
                                                                     <a href="creator.html">Creators<i data-feather="users" /></a>
                                                                 </li>
@@ -104,8 +104,8 @@ const Header = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><Link to="blog">Blog</Link></li>
+                                        <li><Link to="contact">Contact</Link></li>
                                     </ul>
                                     {/* End Mainmanu Nav */}
                                 </nav>
@@ -113,7 +113,7 @@ const Header = () => {
                         </div>
                         <div className="header-right">
                             <div className="setting-option d-none d-lg-block">
-                                <form className="search-form-wrapper" action="#/">
+                                <form className="search-form-wrapper">
                                     <input type="search" placeholder="Search Here" aria-label="Search" />
                                     <div className="search-icon">
                                         <button><i className="fas fa-search"></i></button>
@@ -122,18 +122,21 @@ const Header = () => {
                             </div>
                             <div className="setting-option rn-icon-list d-block d-lg-none">
                                 <div className="icon-box search-mobile-icon">
-                                    <button><i className="feather-search" /></button>
+                                    <button><i className="fas fa-search"></i></button>
+                                    {/* <button><i className="feather-search" /></button> */}
                                 </div>
-                                <form id="header-search-1" action="#/" method="GET" className="large-mobile-blog-search">
+                                <form id="header-search-1" method="GET" className="large-mobile-blog-search">
                                     <div className="rn-search-mobile form-group">
-                                        <button type="submit" className="search-button"><i className="feather-search" /></button>
+                                        <button type="submit" className="search-button"><i className="fas fa-search"></i></button>
                                         <input type="text" placeholder="Search ..." />
                                     </div>
                                 </form>
                             </div>
                             <div className="setting-option rn-icon-list notification-badge">
+
+                                {/* desktop */}
                                 <div className="icon-box">
-                                    <a href="activity.html"> <i className='fa fa-bell'><span className="badge">6</span></i></a>
+                                    <Link to="activity"> <i className='fa fa-bell'><span className="badge">6</span></i></Link>
                                 </div>
                             </div>
                             <div className="setting-option header-btn">
@@ -143,7 +146,7 @@ const Header = () => {
                             </div>
                             <div className="setting-option rn-icon-list user-account">
                                 <div className="icon-box">
-                                    <a href="author.html"><img src="assets/images/icons/boy-avater.png" alt="Images" /></a>
+                                    <Link to="author"><img src="assets/images/icons/boy-avater.png" alt="Images" /></Link>
                                     <div className="rn-dropdown">
                                         <div className="rn-inner-top">
                                             <h4 className="title"><a href="product-details.html">Christopher William</a></h4>
@@ -188,7 +191,7 @@ const Header = () => {
                             <div className="setting-option mobile-menu-bar d-block d-xl-none">
                                 <div className="hamberger">
                                     <button className="hamberger-button">
-                                        <i className="feather-menu" />
+                                        <i className="fas fa-bars"></i>
                                     </button>
                                 </div>
                             </div>
@@ -220,7 +223,7 @@ const Header = () => {
                         </div>
                         <div className="close-menu">
                             <button className="close-button">
-                                <i className="feather-x" />
+                                <i className="fas fa-times"></i>
                             </button>
                         </div>
                     </div>
@@ -230,13 +233,13 @@ const Header = () => {
                             <li className="has-droupdown">
                                 <a className="nav-link its_new" href="#/">Home</a>
                                 <ul className="submenu">
-                                    <li><a href="index.html">Home page One <i className="feather-home" /></a></li>
-                                    <li><a href="index-two.html">Home page Two<i className="feather-home" /></a></li>
-                                    <li><a href="index-three.html">Home page Three<i className="feather-home" /></a></li>
-                                    <li><a href="index-four.html">Home page Four<i className="feather-home" /></a></li>
-                                    <li><a href="index-five.html">Home page Five<i className="feather-home" /></a></li>
-                                    <li><a href="index-six.html">Home page Six<i className="feather-home" /></a></li>
-                                    <li><a href="index-seven.html">Home page Seven<i className="feather-home" /></a></li>
+                                    <li><a href="index.html">Home page One <i className="fas fa-home"></i></a></li>
+                                    <li><a href="index-two.html">Home page Two<i className="fas fa-home"></i></a></li>
+                                    <li><a href="index-three.html">Home page Three<i className="fas fa-home"></i></a></li>
+                                    <li><a href="index-four.html">Home page Four<i className="fas fa-home"></i></a></li>
+                                    <li><a href="index-five.html">Home page Five<i className="fas fa-home"></i></a></li>
+                                    <li><a href="index-six.html">Home page Six<i className="fas fa-home"></i></a></li>
+                                    <li><a href="index-seven.html">Home page Seven<i className="fas fa-home"></i></a></li>
                                 </ul>
                             </li>
                             <li><a href="about.html">About</a>
@@ -244,14 +247,14 @@ const Header = () => {
                             <li className="has-droupdown">
                                 <a className="nav-link its_new" href="#/">Explore</a>
                                 <ul className="submenu">
-                                    <li><a href="explore-one.html">Explore Filter<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-two.html">Explore Isotop<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-three.html">Explore Carousel<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-four.html">Explore Simple<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-five.html">Explore Place Bid<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-six.html">Place Bid With Filter<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-seven.html">Place Bid With Isotop<i className="feather-fast-forward" /></a></li>
-                                    <li><a href="explore-eight.html">Place Bid With Carousel<i className="feather-fast-forward" /></a></li>
+                                    <li><a href="explore-one.html">Explore Filter<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-two.html">Explore Isotop<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-three.html">Explore Carousel<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-four.html">Explore Simple<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-five.html">Explore Place Bid<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-six.html">Place Bid With Filter<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-seven.html">Place Bid With Isotop<i className="fas fa-fast-forward"></i></a></li>
+                                    <li><a href="explore-eight.html">Place Bid With Carousel<i className="fas fa-fast-forward"></i></a></li>
                                     <li><a className="live-expo" href="explore-live.html">Live Explore</a></li>
                                     <li><a className="live-expo" href="explore-live-two.html">Live Explore Carousel</a></li>
                                     <li><a className="live-expo" href="explore-live-three.html">Live With Place Bid</a></li>
@@ -316,8 +319,8 @@ const Header = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><Link to="blog">Blog</Link></li>
+                            <li><Link to="contact">Contact</Link></li>
                         </ul>
                         {/* End Mainmanu Nav */}
                     </nav>
