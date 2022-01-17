@@ -35,7 +35,7 @@ const Author = () => {
                                         <div className="author-button-area">
                                             <span className="btn at-follw follow-button"><i data-feather="user-plus" />
                                                 Follow</span>
-                                            <span className="btn at-follw share-button" data-bs-toggle="modal" data-bs-target="#shareModal"><i data-feather="share-2" /></span>
+                                            <span className="btn at-follw share-button" data-bs-toggle="modal" data-bs-target="#shareModal"><i class="fas fa-share-alt"></i></span>
                                             <div className="count at-follw">
                                                 <div className="share-btn share-btn-activation dropdown">
                                                     <button className="icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">

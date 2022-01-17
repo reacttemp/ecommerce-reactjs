@@ -11811,12 +11811,12 @@ span.rn-badge-card::before {
 }
 .with-megamenu .nav-link.its_new.open::after,
 .has-droupdown .nav-link.its_new.open::after {
-  content: "\e931";
+  content: "\f077";
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  font-family: "feather" !important;
+  font-family: "Font Awesome 5 Free" !important;
 }
 .with-megamenu .nav-link.its_new::after,
 .has-droupdown .nav-link.its_new::after {
@@ -13088,7 +13088,7 @@ button.btn.btn-large {
   padding-left: 5px;
 }
 .discover-filter-button.open i::before {
-  content: "\ea02";
+  content: "\f00d";
 }
 
 /*-------------------------
@@ -15357,7 +15357,7 @@ button .small-image {
 }
 .top-seller-inner-one .thumbnail.varified::after {
   position: absolute;
-  content: "\e92b";
+  content: "\f00c";
   right: -3px;
   top: 26%;
   height: 20px;
@@ -15365,8 +15365,12 @@ button .small-image {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
   transform: translateY(-50%);
-  font-family: "feather" !important;
+  font-size: 10px;
+  /* font-family: "feather" !important; */
+  font-family: "Font Awesome 5 Free" !important;
+  font-family: "Courier New", Courier, monospace;
   z-index: 1;
   color: var(--color-white);
   background: var(--color-primary);

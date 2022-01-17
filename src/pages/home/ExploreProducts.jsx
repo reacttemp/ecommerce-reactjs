@@ -12,7 +12,7 @@ const ExploreProducts = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
                             <div className="view-more-btn text-start text-sm-end" data-sal-delay={150}  data-sal-duration={800}>
-                                <button className="discover-filter-button discover-filter-activation btn btn-primary">Filter<i className="feather-filter" /></button>
+                                <button className="discover-filter-button discover-filter-activation btn btn-primary">Filter<i className="fas fa-filter"></i></button>
                             </div>
                         </div>
                     </div>
